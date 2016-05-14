@@ -16,7 +16,7 @@
                 console.log( 'scroll top '+ document.body.scrollTop );
               //  console.log('scroll summ ' + elemHeight);
 
-               if(document.body.scrollTop-elemHeight)>0 || document.documentElement.scrollTop-elemHeight>0)){
+               if((document.body.scrollTop-elemHeight) > 0 || document.documentElement.scrollTop-elemHeight>0){
 
                    elem.className = "containerfx";
 
