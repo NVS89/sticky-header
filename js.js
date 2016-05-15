@@ -5,7 +5,7 @@
     function(){
         document.addEventListener("DOMContentLoaded",function(){
             console.log("document is ready");
-            var elem = document.getElementsByClassName('container')[0];
+            var elem = document.getElementsByClassName('sticky-header')[0];
             var elemHeight = elem.getBoundingClientRect().top ;
 
             console.log( 'start top ' + elem.getBoundingClientRect().top  );
@@ -18,11 +18,11 @@
 
                if((document.body.scrollTop-elemHeight) > 0 || document.documentElement.scrollTop-elemHeight>0){
 
-                   elem.className = "containerfx";
+                   elem.className = "sticky-header-fixed";
 
                 }else {
 
-                   elem.className = "container";
+                   elem.className = "sticky-header";
                }
             };
         })
